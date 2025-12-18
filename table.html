@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Table</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .title {
+        text-align: left;
+        margin: 0 auto 8px;
+        font-size: 15px;
+      }
+      .table-inner {
+        width: 600px;
+        padding: 12px 24px 24px 24px;
+        margin: 40px auto 0;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 7px 1px #505050;
+        color: #667085;
+      }
+      .table-maim-row {
+        height: 56px;
+        border-bottom: solid #e0e0e0;
+        border-bottom-width: 1px;
+      }
+      .w-376 {
+        width: 376px;
+        text-align: left;
+      }
+      .text-right {
+        text-align: right;
+        color: #101828;
+      }
+
+      body {
+        background: #ccc;
+      }
+      .td-border-none {
+        border: none;
+        vertical-align: bottom;
+      }
+      a {
+        text-decoration: none;
+        height: 24px;
+        text-align: center;
+        display: block;
+        margin: 0 0 28px;
+        font-weight: 400;
+        color: #98a2b3;
+      }
+      .Logo {
+        display: block;
+        margin: 0 auto 40px auto;
+      }
+      .head-color {
+        color: #101828;
+        text-align: right;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-inner">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="3">
+              <a href="#"> View in browser</a>
+              <img
+                class="Logo"
+                src="./image/Logo.svg"
+                alt="ACME"
+                width="120"
+                height="56"
+              />
+              <p
+                class="title"
+                style="color: #101828; font-weight: 600; font-size: 28px"
+              >
+                Functional Style
+              </p>
+              <p class="title" style="font-weight: 400; padding-bottom: 40px">
+                Combine practicality and style effortlessly with our furniture,
+                offering functional designs that enhance your living space
+              </p>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="main-table">
+          <tr class="table-maim-row">
+            <th class="w-376">Item</th>
+            <th class="head-color">Qty</th>
+            <th class="head-color">Price</th>
+          </tr>
+          <tr class="table-maim-row">
+            <td class="w-376">Elegant Feast</td>
+            <td class="text-right">2</td>
+            <td class="text-right">$499.99</td>
+          </tr>
+          <tr class="table-maim-row">
+            <td class="w-376">Modern Fusion</td>
+            <td class="text-right">2</td>
+            <td class="text-right">$699.99</td>
+          </tr>
+          <tr class="table-maim-row">
+            <td class="w-376">Rustic Charm</td>
+            <td class="text-right">2</td>
+            <td class="text-right">$399.99</td>
+          </tr>
+          <tr class="table-maim-row">
+            <th class="w-376">Total</th>
+            <td class="text-right">6</td>
+            <td class="head-color">$3194.99</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="td-border-none" colspan="3">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="td-border-none">
+                      <img
+                        src="./image/Logo.svg"
+                        alt="ACME"
+                        width="120"
+                        height="56"
+                        style="margin-top: 48px"
+                      />
+                      <p
+                        class="head-color"
+                        style="margin: 15px auto 0; text-align: left"
+                      >
+                        Acme corporation
+                      </p>
+                      <p style="margin: 4px auto 0">Think different</p>
+                    </td>
+                    <td
+                      class="td-border-none"
+                      style="
+                        text-align: center;
+                        width: 288px;
+                        height: 24px;
+                        margin: 96px 24px 0 0;
+                      "
+                    >
+                      123 Main Street Anytown, CA 12345
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
